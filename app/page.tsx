@@ -90,8 +90,8 @@ export default function Home() {
           <div className="absolute inset-x-0 top-0 h-px bg-white/20" />
           <div className="absolute left-[-8rem] top-20 h-72 w-72 rounded-full bg-[#f3d15e]/16 blur-3xl" />
           <div className="absolute right-[-6rem] top-32 h-80 w-80 rounded-full bg-[#fff1cf]/10 blur-3xl" />
-          <div className="mx-auto max-w-7xl px-6 pb-20 pt-6 lg:px-10">
-            <header className="sticky top-4 z-30 mb-16">
+          <header className="fixed inset-x-0 top-4 z-50">
+            <div className="mx-auto max-w-7xl px-6 lg:px-10">
               <div className="flex items-center justify-between rounded-full border border-white/14 bg-[#2e2014]/58 px-5 py-3 shadow-[0_18px_55px_rgba(20,10,4,0.22)] backdrop-blur-2xl">
                 <a href="#home" className="flex items-center gap-3">
                     <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#f1cf64]/18 text-[#f6df95] ring-1 ring-inset ring-[#f1cf64]/40 backdrop-blur-xl">
@@ -131,8 +131,10 @@ export default function Home() {
                   </a>
                 </Button>
               </div>
-            </header>
+            </div>
+          </header>
 
+          <div className="mx-auto max-w-7xl px-6 pb-20 pt-32 lg:px-10 lg:pt-36">
             <div className="grid gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
               <div className="max-w-3xl">
                 <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#f4d678]/28 bg-[#f0ca59]/12 px-4 py-2 text-sm text-[#fde9b2] backdrop-blur-xl">
